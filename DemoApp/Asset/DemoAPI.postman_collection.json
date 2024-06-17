@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "ffa5de0a-b16e-40a9-9650-08813b6e8206",
+		"name": "DemoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBUEkxIiwianRpIjoiN2ZjYjViYjAtMmY1ZS00YmQ1LWFhN2MtNmQ2NDEzYzc5ZDRiIiwiZXhwIjoxNzE4NjE3MTIzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8ifQ.qP87TqvuOvPsLXqLGDBjpisF3FLA4HtXL_-VeD80x9s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-version",
+						"value": "2.0",
+						"type": "text"
+					},
+					{
+						"key": "customerID",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44364/api/order/getorders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"order",
+						"getorders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBUEkxIiwianRpIjoiN2ZjYjViYjAtMmY1ZS00YmQ1LWFhN2MtNmQ2NDEzYzc5ZDRiIiwiZXhwIjoxNzE4NjE3MTIzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8ifQ.qP87TqvuOvPsLXqLGDBjpisF3FLA4HtXL_-VeD80x9s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44364/api/order/placeorder",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"order",
+						"placeorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/api/token/generate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"token",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBUEkxIiwianRpIjoiN2ZjYjViYjAtMmY1ZS00YmQ1LWFhN2MtNmQ2NDEzYzc5ZDRiIiwiZXhwIjoxNzE4NjE3MTIzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8ifQ.qP87TqvuOvPsLXqLGDBjpisF3FLA4HtXL_-VeD80x9s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-version",
+						"value": "2.0",
+						"type": "text"
+					},
+					{
+						"key": "orderID",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44364/api/order/getorderdetails",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"order",
+						"getorderdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderDetailsWithPolly",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBUEkxIiwianRpIjoiYTRkZjZkNDYtYWM4NS00N2YyLWI2ZmEtMzY5YmMyMTBjMTllIiwiZXhwIjoxNzE4NjIzOTQyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2NC8ifQ.N55xbF4qQYvjE-r6P4eDA-hWZks1q0ar5tcBOsnT0oY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "orderID",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44364/api/order/GetOrderDetailsWithPolly",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"order",
+						"GetOrderDetailsWithPolly"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
